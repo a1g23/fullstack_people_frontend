@@ -1,0 +1,39 @@
+// scss is Sass - different type of CSS
+// Sass allows you to create variables in your CSS
+
+$maincolor: pink;
+
+
+// Sass allows you to create mixins which house collections of CSS
+
+@mixin hot-pink-black-letters {
+    background-color: $maincolor;
+    color: black;
+    border: 1px solid black;
+}
+
+h1{
+    @include hot-pink-black-letters;
+}
+
+
+//Sass allows for nesting
+
+div {
+    h2 {
+        background-color: aquamarine;
+    }
+}
+
+div {
+    input {
+        background-color: aqua;
+        font-size: 20px;
+        &[type='submit'] {
+            background-color: hotpink;
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ const ShowAll = () => {
     console.log(people)
     return (
         <div>
-            <h3>Create a Person</h3>
+            <h1>Create a Person</h1>
             
             <Form action={`/create`} method='post'>
                 <input type='input' name='name' placeholder="person's name" />
